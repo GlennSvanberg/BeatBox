@@ -3,6 +3,7 @@ package com.svanberggroup.beatbox;
 public class Sound {
     private String mAssetPath;
     private String mName;
+    private Integer mSoundId;
 
     public Sound(String assetPath) {
         mAssetPath = assetPath;
@@ -15,7 +16,15 @@ public class Sound {
         return mAssetPath;
     }
 
+    public Integer getSoundId() {
+        return mSoundId;
+    }
+
     public String getName() {
         return mName;
+    }
+
+    public void setSoundId(Integer soundId) {
+        mSoundId = soundId;
     }
 }
